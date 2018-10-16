@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3
+FROM resin/raspberry-pi-alpine-node:0.10.22-slim
 
 COPY upload-files.sh /upload-files.sh
 
