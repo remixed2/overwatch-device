@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-node
+FROM resin/raspberrypi3
 
 COPY upload-files.sh /upload-files.sh
 
