@@ -4,3 +4,4 @@ services:
     build: ./uploader-service
     devices:
       - "/dev/video0:/dev/video0"
+      - "/dev/snd:/dev/snd"
