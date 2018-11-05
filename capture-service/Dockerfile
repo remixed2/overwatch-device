@@ -1,4 +1,5 @@
-FROM resin/raspberrypi3-alpine:3.7
+#FROM resin/raspberrypi3-alpine:3.7
+FROM resin/%%RESIN_MACHINE_NAME%%-node:latest
 
 # Install apt deps
 RUN apt-get update && apt-get install -y \
