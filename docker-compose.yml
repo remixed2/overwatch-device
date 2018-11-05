@@ -1,7 +1,9 @@
 version: '2'
 services:
-  frontend:
+  uploader:
     build: ./uploader-service
+  capturer:
+    build: ./capturer-service
     devices:
       - "/dev/video0:/dev/video0"
       - "/dev/snd:/dev/snd"

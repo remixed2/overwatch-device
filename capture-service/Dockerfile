@@ -29,6 +29,6 @@ RUN cd /usr/src && \
   make && \
   sudo make install
 
-#COPY upload-files.sh /upload-files.sh
+COPY capture-video.sh /capture-video.sh
 
-#CMD ./upload-files.sh
+CMD ./capture-video.sh
