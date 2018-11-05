@@ -3,7 +3,7 @@ services:
   uploader:
     build: ./uploader-service
   capturer:
-    build: ./capturer-service
+    build: ./capture-service
     devices:
       - "/dev/video0:/dev/video0"
       - "/dev/snd:/dev/snd"
