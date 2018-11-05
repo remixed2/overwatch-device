@@ -7,14 +7,16 @@ shopt -s nullglob
 #export b2_application_key="appkey"
 #export b2_account_id="appkeyid"
 
-b2 authorize-account $b2_account_id $b2_application_key 
-
 cd $monitor_folder
 while true
 do
     if [ -z "$(ls -A $monitor_folder)" ]; then
         echo "No new files"
     else
+        # Authorize the account 
+        b2 authorize-account $b2_account_id $b2_application_key 
+
+        # Loop through the files
         for file in $monitor_folder/*.*; do
             filename=${file##*/}
             echo "Processing file '$filename'"
